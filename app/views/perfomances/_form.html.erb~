@@ -1,0 +1,30 @@
+<%= form_for(@perfomance) do |f| %>
+  <% if @perfomance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@perfomance.errors.count, "error") %> prohibited this perfomance from being saved:</h2>
+
+      <ul>
+      <% @perfomance.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :film %><br />
+    <%= f.text_field :film %>
+  </div>
+  <div class="field">
+    <%= f.label :hall %><br />
+<% m = @perfomance.id %>
+    <%= f.text_field :hall.name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @perfomance.id %>
+</p>
+<p>
+  <b>Date:</b>
+  <%= @perfomance.date %>
+</p>
+
+<p>
+  <b>Film:</b>
+  <%= @perfomance.film.name %>
+</p>
+
+<p>
+  <b>Hall:</b>
+  <%= @perfomance.hall.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_perfomance_path(@perfomance) %> |
+<%= link_to 'Back', perfomances_path %>|
+<%= link_to 'Home', home_path %> 

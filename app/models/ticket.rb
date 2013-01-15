@@ -1,0 +1,4 @@
+class Ticket < ActiveRecord::Base
+  belongs_to :perfomance
+  attr_accessible :row, :seat, :perfomance
+end

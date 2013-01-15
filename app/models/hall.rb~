@@ -1,0 +1,5 @@
+class Hall < ActiveRecord::Base
+  belongs_to :cinema
+  attr_accessible :name, :nor, :nos, :cinema
+  has_many :perfomances
+end

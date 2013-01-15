@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @hall.name %>
+</p>
+
+<p>
+  <b>Nor:</b>
+  <%= @hall.nor %>
+</p>
+
+<p>
+  <b>Nos:</b>
+  <%= @hall.nos %>
+</p>
+
+<p>
+  <b>Cinema:</b>  
+  <%= @hall.cinema %>
+</p>
+
+
+<%= link_to 'Edit', edit_hall_path(@hall) %> |
+<%= link_to 'Back', halls_path  %>|
+<%= link_to 'Home', home_path %> 
+

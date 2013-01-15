@@ -1,0 +1,28 @@
+<h1>Listing perfomances</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Film</th>
+    <th>Hall</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @perfomances.each do |perfomance| %>
+  <tr>
+    <td><%= perfomance.date %></td>
+    <td><%= perfomance.film.name %></td>
+    <td><%= perfomance.hall.name %></td>
+    <td><%= link_to 'Show', perfomance %></td>
+    <td><%= link_to 'Edit', edit_perfomance_path(perfomance) %></td>
+    <td><%= link_to 'Destroy', perfomance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Perfomance', new_perfomance_path %>|
+<%= link_to 'Home', home_path %> 

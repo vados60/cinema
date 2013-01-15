@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  perfomance: 
+  row: 1
+  seat: 1
+
+two:
+  perfomance: 
+  row: 1
+  seat: 1

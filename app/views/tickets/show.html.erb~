@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Perfomance_ID:</b>
+  <%= @ticket.perfomance.id	 %>
+</p>
+<p>
+  <b>Cinema:</b>
+  <%= @ticket.perfomance.film.name	 %>
+</p>
+<p>
+  <b>Hall:</b>
+  <%= @ticket.perfomance.hall.name %>
+</p>
+<p>
+  <b>Film:</b>
+  <%= @ticket.perfomance.film.name %>
+</p>
+<p>
+  <b>Date/Tima:</b>
+  <%= @ticket.perfomance.date %>
+</p>
+
+<p>
+  <b>Row:</b>
+  <%= @ticket.row %>
+</p>
+
+<p>
+  <b>Seat:</b>
+  <%= @ticket.seat %>
+</p>
+
+
+<%= link_to 'Edit', edit_ticket_path(@ticket) %> |
+<%= link_to 'Back', tickets_path %>
+<%= link_to 'Home', home_path %> 
